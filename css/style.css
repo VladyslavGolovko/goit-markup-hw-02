@@ -15,9 +15,16 @@ a {
   --black: #212121;
   --white: #ffffff;
   --grey: #757575;
+  --whisper: #eeeeee;
   --blue: #2196f3;
   --black-rock: #2f303a;
   --ghost-white: #f5f4fa;
+}
+
+:root {
+  --text-medium: 500;
+  --text-bold: 700;
+  --text-extra-bold: 900;
 }
 
 /* index.html */
@@ -26,7 +33,7 @@ a {
 
 .header-logo-link {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 26px;
   line-height: 1.2;
   color: var(--black);
@@ -34,7 +41,7 @@ a {
 
 .header-logo-span {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 26px;
   line-height: 1.2;
   color: var(--blue);
@@ -46,7 +53,7 @@ a {
 .nav-link-portfolio,
 .nav-link-contacts {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 500;
+  font-weight: var(--text-medium);
   font-size: 14px;
   line-height: 1.2;
   color: var(--black);
@@ -55,7 +62,7 @@ a {
 .nav-link-email,
 .nav-link-tel {
   /*font-family: 'Roboto', sans-serif;*/
-  font-style: 500;
+  font-style: var(--text-medium);
   font-size: 14px;
   line-height: 1.2;
   color: var(--grey);
@@ -84,7 +91,7 @@ a {
 }
 .hero-section-title {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 900;
+  font-weight: var(--text-extra-bold);
   font-size: 44px;
   line-height: 1.4;
   color: var(--white);
@@ -92,21 +99,27 @@ a {
 
 .hero-section-button {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 16px;
   line-height: 1.9;
+  border: 1px solid var(--ghost-white);
+  border-radius: 4px;
   cursor: pointer;
+  background-color: var(--ghost-white);
+  color: var(--black);
+}
+
+.hero-section-button:hover {
   background-color: var(--blue);
   color: var(--white);
   border: 1px solid var(--blue);
-  border-radius: 4px;
 }
 
 /* company-advantages-section */
 
 .company-advantages-item-title {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 14px;
   line-height: 1.2;
 }
@@ -122,7 +135,7 @@ a {
 
 .what-we-do-title {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 36px;
   line-height: 1.2;
 }
@@ -135,7 +148,7 @@ a {
 
 .our-team-title {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 36px;
   line-height: 1.2;
   color: var(--black);
@@ -155,7 +168,7 @@ a {
 .our-team-third-card-master-name,
 .our-team-fourth-card-master-name {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 700;
+  font-weight: var(--text-medium);
   font-size: 16px;
   line-height: 1.2;
   color: var(--black);
@@ -178,7 +191,7 @@ a {
 
 .footer-logo-link {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 26px;
   line-height: 1.2;
   color: var(--white);
@@ -186,7 +199,7 @@ a {
 
 .footer-logo-span {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 26px;
   line-height: 1.2;
   color: var(--blue);
@@ -224,7 +237,7 @@ a {
 
 .filters-item-button {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 500;
+  font-weight: var(--medium);
   font-size: 16px;
   border: 1px solid var(--ghost-white);
   border-radius: 4px;
@@ -266,7 +279,7 @@ a {
 .project-8-title,
 .project-9-title {
   /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-size: 18px;
   line-height: 2;
   color: var(--black);
