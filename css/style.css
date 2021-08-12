@@ -1,0 +1,287 @@
+body {
+  font-family: 'Roboto' sans-serif;
+  color: #212121;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --black: #212121;
+  --white: #ffffff;
+  --grey: #757575;
+  --blue: #2196f3;
+  --black-rock: #2f303a;
+  --ghost-white: #f5f4fa;
+}
+
+/* index.html */
+
+/* header */
+
+.header-logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.header-logo-span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--blue);
+}
+
+/* nav-section */
+
+.nav-link-studio,
+.nav-link-portfolio,
+.nav-link-contacts {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.nav-link-email,
+.nav-link-tel {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-style: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--grey);
+}
+
+.nav-link-studio:hover,
+.nav-link-studio:focus,
+.nav-link-portfolio:hover,
+.nav-link-portfolio:focus,
+.nav-link-contacts:hover,
+.nav-link-contacts:focus {
+  color: var(--blue);
+}
+
+.nav-link-email:hover,
+.nav-link-email:focus,
+.nav-link-tel:hover,
+.nav-link-tel:focus {
+  color: var(--blue);
+}
+
+/* hero section */
+
+.hero-section {
+  background-color: var(--black-rock);
+}
+.hero-section-title {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--white);
+}
+
+.hero-section-button {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+}
+
+/* company-advantages-section */
+
+.company-advantages-item-title {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.company-advantages-item-info {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--grey);
+}
+
+/* what-we-do section */
+
+.what-we-do-title {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+/* our-team-section */
+
+.our-team-section {
+  background-color: var(--ghost-white);
+}
+
+.our-team-title {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.our-team-card-1,
+.our-team-card-2,
+.our-team-card-3,
+.our-team-card-4 {
+  width: 270px;
+  height: 368px;
+  background-color: var(--white);
+}
+
+.our-team-first-card-master-name,
+.our-team-second-card-master-name,
+.our-team-third-card-master-name,
+.our-team-fourth-card-master-name {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--black);
+}
+.our-team-first-card-master-speciality,
+.our-team-second-card-master-speciality,
+.our-team-third-card-master-speciality,
+.our-team-fourth-card-master-speciality {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--grey);
+}
+
+/* footer-section */
+
+.footer-section {
+  background-color: var(--black-rock);
+}
+
+.footer-logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.footer-logo-span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--blue);
+}
+
+.contacts-link-address {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--white);
+}
+
+.contacts-link-email,
+.contacts-link-tel {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--grey);
+}
+
+.contacts-link-address:hover,
+.contacts-link-address:focus,
+.contacts-link-email:hover,
+.contacts-link-email:focus,
+.contacts-link-tel:hover,
+.contacts-link-tel:focus {
+  color: var(--blue);
+}
+
+/* portfolio.html*/
+
+/* portfolio-section */
+
+/* filters section */
+
+.filters-item-button {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid var(--ghost-white);
+  border-radius: 4px;
+  line-height: 1.6;
+  cursor: pointer;
+  background-color: var(--ghost-white);
+  color: var(--black);
+}
+
+.filters-item-button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* projects-section */
+
+.project-1-card,
+.project-2-card,
+.project-3-card,
+.project-4-card,
+.project-5-card,
+.project-6-card,
+.project-7-card,
+.project-8-card,
+.project-9-card {
+  width: 370px;
+  height: 404px;
+  border: 1px solid var(--whisper);
+  background-color: var(--white);
+}
+
+.project-1-title,
+.project-2-title,
+.project-3-title,
+.project-4-title,
+.project-5-title,
+.project-6-title,
+.project-7-title,
+.project-8-title,
+.project-9-title {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--black);
+}
+.project-1-info,
+.project-2-info,
+.project-3-info,
+.project-4-info,
+.project-5-info,
+.project-6-info,
+.project-7-info,
+.project-8-info,
+.project-9-title {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--grey);
+}
