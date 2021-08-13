@@ -1,9 +1,14 @@
+/* variables section */
+
 :root {
   --black: #212121;
   --white: #ffffff;
   --grey: #757575;
-  --whisper: #eeeeee;
   --blue: #2196f3;
+}
+
+:root {
+  --whisper: #eeeeee;
   --black-rock: #2f303a;
   --ghost-white: #f5f4fa;
 }
@@ -14,10 +19,14 @@
   --text-extra-bold: 900;
 }
 
+/* general body selectors section */
+
 body {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
   color: var(--black);
 }
+
+/* repeating classes section */
 
 .list {
   list-style-type: none;
@@ -27,23 +36,43 @@ body {
   text-decoration: none;
 }
 
+.logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: var(--text-bold);
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.header-nav-link {
+  font-weight: var(--text-medium);
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.footer-address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.main-section-title {
+  font-weight: var(--text-bold);
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
 /* index.html */
 
 /* header-section */
 
 .header-logo-link {
-  font-family: 'Raleway', sans-serif;
-  font-weight: var(--text-bold);
-  font-size: 26px;
-  line-height: 1.17;
   color: var(--black);
 }
 
 .header-logo-span {
-  font-family: 'Raleway', sans-serif;
-  font-weight: var(--text-bold);
-  font-size: 26px;
-  line-height: 1.17;
   color: var(--blue);
 }
 
@@ -52,17 +81,11 @@ body {
 .nav-link-studio,
 .nav-link-portfolio,
 .nav-link-contacts {
-  font-weight: var(--text-medium);
-  font-size: 14px;
-  line-height: 1.17;
   color: var(--black);
 }
 
 .nav-link-email,
 .nav-link-tel {
-  font-style: var(--text-medium);
-  font-size: 14px;
-  line-height: 1.17;
   color: var(--grey);
 }
 
@@ -84,15 +107,17 @@ body {
 
 /* main-section */
 
-/* her-section */
+/* hero-section */
+
 .hero-section {
   background-color: var(--black-rock);
   border: 1px solid var(--black-rock);
 }
 .hero-section-title {
-  font-weight: var(--text-extra-bold);
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   color: var(--white);
 }
 
@@ -100,6 +125,7 @@ body {
   font-weight: var(--text-bold);
   font-size: 16px;
   line-height: 1.875;
+  letter-spacing: 0.06em;
   border: 1px solid var(--ghost-white);
   border-radius: 4px;
   cursor: pointer;
@@ -120,20 +146,21 @@ body {
   font-weight: var(--text-bold);
   font-size: 14px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--black);
 }
 
 .company-advantages-item-info {
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--grey);
 }
 
 /* what-we-do-section */
 
 .what-we-do-title {
-  font-weight: var(--text-bold);
-  font-size: 36px;
-  line-height: 1.17;
+  color: var(--black);
 }
 
 /* our-team-section */
@@ -144,36 +171,26 @@ body {
 }
 
 .our-team-title {
-  font-weight: var(--text-bold);
-  font-size: 36px;
-  line-height: 1.17;
   color: var(--black);
 }
 
-.our-team-card-1,
-.our-team-card-2,
-.our-team-card-3,
-.our-team-card-4 {
+.our-team-card {
   width: 270px;
   height: 368px;
   background-color: var(--white);
 }
 
-.our-team-first-card-master-name,
-.our-team-second-card-master-name,
-.our-team-third-card-master-name,
-.our-team-fourth-card-master-name {
+.our-team-card-master-name {
   font-weight: var(--text-medium);
   font-size: 16px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--black);
 }
-.our-team-first-card-master-speciality,
-.our-team-second-card-master-speciality,
-.our-team-third-card-master-speciality,
-.our-team-fourth-card-master-speciality {
+.our-team-card-master-speciality {
   font-size: 16px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--grey);
 }
 
@@ -185,33 +202,21 @@ body {
 }
 
 .footer-logo-link {
-  font-family: 'Raleway', sans-serif;
-  font-weight: var(--text-bold);
-  font-size: 26px;
-  line-height: 1.17;
   color: var(--white);
 }
 
 .footer-logo-span {
-  font-family: 'Raleway', sans-serif;
-  font-weight: var(--text-bold);
-  font-size: 26px;
-  line-height: 1.17;
   color: var(--blue);
 }
 
 /* contacts-section */
 
 .contacts-link-address {
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--white);
 }
 
 .contacts-link-email,
 .contacts-link-tel {
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--grey);
 }
 
@@ -230,76 +235,43 @@ body {
 
 /* filters-section */
 
-.filters-item-button-1,
-.filters-item-button-2,
-.filters-item-button-3,
-.filters-item-button-4,
-.filters-item-button-5 {
+.filters-item-button {
   font-weight: var(--medium);
   font-size: 16px;
   border: 1px solid var(--ghost-white);
   border-radius: 4px;
   line-height: 1.625;
+  letter-spacing: 0.03em;
   cursor: pointer;
   background-color: var(--ghost-white);
   color: var(--black);
 }
 
-.filters-item-button-1:hover,
-.filters-item-button1:focus,
-.filters-item-button-2:hover,
-.filters-item-button2:focus,
-.filters-item-button-3:hover,
-.filters-item-button3:focus,
-.filters-item-button-4:hover,
-.filters-item-button4:focus,
-.filters-item-button-5:hover,
-.filters-item-button5:focus {
+.filters-item-button:hover,
+.filters-item-button:focus {
   background-color: var(--blue);
   color: var(--white);
 }
 
 /* projects-section */
 
-.project-1-card,
-.project-2-card,
-.project-3-card,
-.project-4-card,
-.project-5-card,
-.project-6-card,
-.project-7-card,
-.project-8-card,
-.project-9-card {
+.projects-card {
   width: 370px;
   height: 404px;
   border: 1px solid var(--whisper);
   background-color: var(--white);
 }
 
-.project-1-title,
-.project-2-title,
-.project-3-title,
-.project-4-title,
-.project-5-title,
-.project-6-title,
-.project-7-title,
-.project-8-title,
-.project-9-title {
+.projects-card-title {
   font-weight: var(--text-bold);
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--black);
 }
-.project-1-type,
-.project-2-type,
-.project-3-type,
-.project-4-type,
-.project-5-type,
-.project-6-type,
-.project-7-type,
-.project-8-type,
-.project-9-type {
+.projects-card-type {
   font-size: 16px;
   line-height: 1.875;
+  letter-spacing: 0.03em;
   color: var(--grey);
 }
