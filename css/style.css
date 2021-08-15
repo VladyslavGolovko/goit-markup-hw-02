@@ -1,19 +1,13 @@
 /* variables section */
 
 :root {
-  --black: #212121;
-  --white: #ffffff;
-  --grey: #757575;
-  --blue: #2196f3;
-}
-
-:root {
-  --whisper: #eeeeee;
-  --black-rock: #2f303a;
-  --ghost-white: #f5f4fa;
-}
-
-:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --tertiary-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --border-color: #eeeeee;
+  --hero-footer-bg-color: #2f303a;
+  --our-team-bg-color: #f5f5f4;
   --text-medium: 500;
   --text-bold: 700;
   --text-extra-bold: 900;
@@ -22,8 +16,8 @@
 /* general body selectors section */
 
 body {
-  font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
-  color: var(--black);
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
 }
 
 /* repeating classes section */
@@ -51,16 +45,20 @@ body {
   letter-spacing: 0.02em;
 }
 
-.footer-address-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .main-section-title {
   font-weight: var(--text-bold);
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.footer-address-link {
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -69,24 +67,30 @@ body {
 /* header-section */
 
 .header-logo-link {
-  color: var(--black);
+  color: var(--secondary-text-color);
 }
 
 .header-logo-span {
-  color: var(--blue);
+  color: var(--accent-color);
 }
 
 /* nav-section */
 
+.link-current-studio,
+.link-current-portfolio,
+.link-current-email {
+  color: var(--accent-color);
+}
+
 .nav-link-studio,
 .nav-link-portfolio,
 .nav-link-contacts {
-  color: var(--black);
+  color: var(--secondary-text-color);
 }
 
 .nav-link-email,
 .nav-link-tel {
-  color: var(--grey);
+  color: var(--main-text-color);
 }
 
 .nav-link-studio:hover,
@@ -95,14 +99,14 @@ body {
 .nav-link-portfolio:focus,
 .nav-link-contacts:hover,
 .nav-link-contacts:focus {
-  color: var(--blue);
+  color: var(--accent-color);
 }
 
 .nav-link-email:hover,
 .nav-link-email:focus,
 .nav-link-tel:hover,
 .nav-link-tel:focus {
-  color: var(--blue);
+  color: var(--accent-color);
 }
 
 /* main-section */
@@ -110,15 +114,15 @@ body {
 /* hero-section */
 
 .hero-section {
-  background-color: var(--black-rock);
-  border: 1px solid var(--black-rock);
+  border: 1px solid var(--hero-footer-bg-color);
+  background-color: var(--hero-footer-bg-color);
 }
 .hero-section-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: var(--white);
+  color: var(--tertiary-text-color);
 }
 
 .hero-section-button {
@@ -126,18 +130,18 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  border: 1px solid var(--ghost-white);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--our-team-bg-color);
   border-radius: 4px;
   cursor: pointer;
-  background-color: var(--ghost-white);
-  color: var(--black);
+  background-color: var(--our-team-bg-color);
 }
 
 .hero-section-button:hover,
 .hero-section-button:focus {
-  background-color: var(--blue);
-  color: var(--white);
-  border: 1px solid var(--blue);
+  color: var(--tertiary-text-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* company-advantages-section */
@@ -147,37 +151,30 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--secondary-text-color);
 }
 
 .company-advantages-item-info {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--grey);
 }
 
 /* what-we-do-section */
 
 .what-we-do-title {
-  color: var(--black);
+  color: var(--secondary-text-color);
 }
 
 /* our-team-section */
 
 .our-team-section {
-  background-color: var(--ghost-white);
-  border: 1px solid var(--ghost-white);
+  border: 1px solid var(--our-team-bg-color);
+  background-color: var(--our-team-bg-color);
 }
 
 .our-team-title {
-  color: var(--black);
-}
-
-.our-team-card {
-  width: 270px;
-  height: 368px;
-  background-color: var(--white);
+  color: var(--secondary-text-color);
 }
 
 .our-team-card-master-name {
@@ -185,39 +182,39 @@ body {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--secondary-text-color);
 }
+
 .our-team-card-master-speciality {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--grey);
 }
 
 /* footer-section */
 
 .footer-section {
-  background-color: var(--black-rock);
-  border: 1px solid var(--black-rock);
+  background-color: var(--hero-footer-bg-color);
+  border: 1px solid var(--hero-footer-bg-color);
 }
 
 .footer-logo-link {
-  color: var(--white);
+  color: var(--tertiary-text-color);
 }
 
 .footer-logo-span {
-  color: var(--blue);
+  color: var(--accent-color);
 }
 
 /* contacts-section */
 
 .contacts-link-address {
-  color: var(--white);
+  color: var(--tertiary-text-color);
 }
 
 .contacts-link-email,
 .contacts-link-tel {
-  color: var(--grey);
+  color: var(--main-text-color);
 }
 
 .contacts-link-address:hover,
@@ -226,7 +223,7 @@ body {
 .contacts-link-email:focus,
 .contacts-link-tel:hover,
 .contacts-link-tel:focus {
-  color: var(--blue);
+  color: var(--accent-color);
 }
 
 /* portfolio.html */
@@ -238,19 +235,19 @@ body {
 .filters-item-button {
   font-weight: var(--medium);
   font-size: 16px;
-  border: 1px solid var(--ghost-white);
-  border-radius: 4px;
   line-height: 1.625;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  border: 1px solid var(--our-team-bg-color);
+  border-radius: 4px;
   cursor: pointer;
-  background-color: var(--ghost-white);
-  color: var(--black);
+  background-color: var(--our-team-bg-color);
 }
 
 .filters-item-button:hover,
 .filters-item-button:focus {
-  background-color: var(--blue);
-  color: var(--white);
+  color: var(--tertiary-text-color);
+  background-color: var(--accent-color);
 }
 
 /* projects-section */
@@ -258,8 +255,8 @@ body {
 .projects-card {
   width: 370px;
   height: 404px;
-  border: 1px solid var(--whisper);
-  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  background-color: var(--tertiary-text-color);
 }
 
 .projects-card-title {
@@ -267,11 +264,10 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--black);
+  color: var(--secondary-text-color);
 }
 .projects-card-type {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--grey);
 }
